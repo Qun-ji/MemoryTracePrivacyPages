@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>迹忆 · 用户隐私协议</title>
+<style>
+  :root { --ink:#1F2A28; --muted:#6B7C78; --line:#E4ECEA; --paper:#F4F9F7; --brand:#2F7D6E; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+    font: 16px/1.85 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  header { padding-bottom: 24px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: .5px; }
+  .tag { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 17px; margin: 32px 0 10px; color: var(--brand); }
+  p { margin: 0 0 14px; color: var(--ink); }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin: 0 0 10px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>迹忆 · 用户隐私协议</h1>
+    <p class="tag">每个记忆，都有迹可循</p>
+  </header>
+<p>欢迎使用「迹忆」。这份说明讲的是：我们拿什么、干什么、以及你的东西为什么不离开你的手机。</p>
+<h2>一、数据存储在哪里</h2>
+<p>你写的文字、拍的照片、录的声音、标记的位置，全部保存在这台设备的本地数据库里。没有账号，不需要登录，没有服务器在收你的内容。卸载应用会连数据一起清除。</p>
+<h2>二、我们会用到的设备能力，以及各自的用途</h2>
+<ul><li>位置（粗略位置 / 精确位置）只在你主动操作「定位」「在地图上选点」时读取，用来给这条记忆记录「在哪里发生」，并在地图上把它标出来。我们不会持续在后台追踪你的行踪。你拒绝授权也完全可以正常使用，只是这一条记忆不会带坐标，需要时仍可在地图上手动选点。</li></ul>
+<ul><li>相机只在你点「拍照」时调用，用来当场拍一张照片存进这条记忆。我们不对取景画面做任何上传或识别。</li></ul>
+<ul><li>麦克风只在你按住「录音」时调用，用来录下当时的声音。</li></ul>
+<ul><li>相册 / 存储（读取照片、保存文件；仅适用于较旧的 Android 系统）读取：从相册里挑选要放进记忆的照片。写入：把你做好的分享卡保存到相册。较新的 Android 版本通过系统相册接口完成这些动作，不再需要这两项授权。</li></ul>
+<ul><li>网络访问 / 网络状态 / Wi-Fi 状态只用于三件事：加载地图瓦片、把经纬度翻译成「某市某区」（逆地理）、以及下载一次省市行政区划边界数据用于在地图上点亮你去过的地区。除此之外，你的任何内容都不经过网络。</li></ul>
+<ul><li>震动保存成功等关键时刻给一下轻反馈，可以在「藏迹」里关掉。</li></ul>
+<h2>三、我们引入的第三方</h2>
+<ul><li>高德地图 SDK（高德软件有限公司）提供地图显示、定位与逆地理服务。它会用到上面的位置与网络能力，并按其自身的隐私政策处理地图相关数据。这是唯一参与地图能力的服务商。</li></ul>
+<ul><li>阿里云 DataV.GeoAtlas（阿里云计算有限公司）提供全国省 / 市行政区划边界坐标数据。我们只从这里下载公开的边界图形，用于在地��上点亮你去过的地区，不发送任何与你有关的内容。</li></ul>
+<p>我们不接入任何统计分析、广告、崩溃上报或用户画像类的 SDK，也没有第三方能用你的日记内容做任何事。</p>
+<h2>四、你不授权会怎样</h2>
+<p>位置之外，所有权限都可以在系统设置里关掉，对应的功能会停用，其余部分照常可用。首次使用时拒绝也不会被反复打扰，需要那个功能时再在系统设置里打开即可。</p>
+<h2>五、怎么把数据删掉</h2>
+<ul><li>单条：打开这条记忆 → 右上角菜单 → 删除。</li><li>全部：卸载应用。</li><li>留个底：想在删除前备份，可以到「藏迹」里导出一份备份文件。</li></ul>
+<p>这份说明更新时，我们会在应用里提示。点到「隐私政策（网页版）」可以查阅网页版本。</p>
+  <footer>本页面由 scripts/build-privacy-page.js 从应用内同一份文案生成，内容与应用内「藏迹 → 隐私与安全」完全一致。</footer>
+</main>
+</body>
+</html>
